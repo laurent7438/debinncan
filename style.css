@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    display: flex;
+    width: 80%;
+    height: 180px;
+}
+#logo{
+    width: 180px;    
+}
+#menu > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+#menu ul > li > a{
+    margin: 0 10px;
+    width: 140px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;  
+}
+#menu ul > li > a:hover{
+    transform: scale(1.1);
+}
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+#div1{
+    height: 348px;
+    display: flex;
+    background-color: #006293;
+}
+#img1{
+    width: 450px;
+    background: url(./access/smiling-women.jpg) center no-repeat;
+    background-size: contain;
+}
+#div12{
+    height: 348px;
+    width: 750px;
+    background: url(./access/carte-france.jpg) right no-repeat;
+    background-size: contain;
+}
+#div12 > h1 {
+    margin: 30px 0 20px 20px;
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+#div12 > p {
+    margin-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+button{
+    margin: 30px 0 20px 20px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: orangered;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.plus{
+    margin: 10px auto;
+    width: 66.66%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h2{
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+.card {
+    margin-top: 30px;
+    width: 49%;
+    height: 200px;
+    padding: 30px 0;
+    text-align: center;
+    outline: 1px solid lightslategrey;
+    position: relative;
+}
+.card > h3{
+    text-transform: uppercase;
+}
+.card > p{
+    margin-top: 20px;
+}
+#fin{
+    border-top: 10px solid #006293;
+}
+.card > img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -35px;
+    left: 45%;
+}
+#par{
+    border-top: 10px solid #eab511;
+}
+#inf{
+    border-top: 10px solid #de3137;
+}
+#soc{
+    border-top: 10px solid  #92ce3a;
+}
+
+#fin > button{
+    background-color: #006293;
+}
+#par > button{
+    background-color: #eab511;
+}
+#inf > button{
+    background-color: #de3137;
+}
+#soc > button{
+    background-color: #92ce3a;
+}
+.gran{
+    height: 200px;
+    background-color: rgb(228, 229, 230);
+    
+}
+.gran > h2{
+    margin: 20px auto;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.gran1{
+    display: flex;
+    justify-content: center;
+}
+
+.bl{
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    outline: 1px solid lightslategrey;
+}
+.bl:hover{
+    transform: scale(1.1);
+}
+.bl > h4{
+    text-transform: uppercase;
+}
+#d1, #d3{
+    color: #006293;
+}
+#d2, #d4{
+    color: #de3137;
+}
+#d2, #d3{
+    transform: skewX(20deg)
+}
+#foot{
+    width: 80%;
+    margin: 10px auto;
+    height: 160px;
+    background: url(./access/footer.jpg) center bottom repeat-x;
+    background-size: contain;
+    
+}
+#foot > p{
+    margin: 0 auto;
+    padding-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+#ok{
+    color: white;
+    background-color: black;
+}
+#ok:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width : 1330px) {
+
+    #foot{
+        background-size: cover;
+    }
+    
+}
+@media screen and (max-width : 800px) and (max-width : 1330px){
+    body{
+        width: 100%;
+    }
+    #container{
+        width: 100%;
+    }
+    menu, #img1 {
+        display: none ;
+    }
+    
+    #div12{
+        width: 100%;
+    background: none;
+    margin: 0;
+    width: 100%;
+    margin-left: 150px;
+    }
+    .plus{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    .card{
+        width: inherit;
+    }
+    .gran1{
+        display: block;
+        justify-content: space-between;
+    }
+}
+/* @media  screen and (max-width : 800px) {
+    #menu{
+        flex-direction: column;
+        height: auto;
+    }
+    #div1{
+        flex-direction: column;
+    }
+    .plus{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    .card{
+        width: inherit;
+    }
+    .gran1{
+        display: flex;
+        justify-content: space-between;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    display: flex;
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+}
+#logo{
+    width: 180px;
+    height: 180px;    
+}
+#menu > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+#menu ul > li > a{
+    margin: 0 10px;
+    width: 140px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;  
+}
+#menu ul > li > a:hover{
+    transform: scale(1.1);
+}
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#div1{
+    height: 348px;
+    display: flex;
+    flex-direction: row;
+    background-color: #006293;
+}
+#img1{
+    width: 450px;
+    background: url(./access/smiling-women.jpg) center no-repeat;
+    background-size: contain;
+}
+#div12{
+    height: 348px;
+    width: 750px;
+    background: url(./access/carte-france.jpg) right no-repeat;
+    background-size: contain;
+}
+#div12 > h1{
+    margin: 30px 0 20px 20px;
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+#div12 > p{
+    margin-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+button{
+    margin: 30px 0 20px 20px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: orangered;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.plus{
+    margin: 10px auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h2{
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+.card {
+    margin-top: 30px;
+    width: 49%;
+    height: 200px;
+    padding: 30px 0;
+    text-align: center;
+    outline: 1px solid lightslategrey;
+    position: relative;
+}
+.card > h3{
+    text-transform: uppercase;
+}
+.card > p{
+    margin-top: 20px;
+}
+#fin{
+    border-top: 10px solid #006293;
+}
+.card > img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -35px;
+    left: 45%;
+}
+#par{
+    border-top: 10px solid #eab511;
+}
+#inf{
+    border-top: 10px solid #de3137;
+}
+#soc{
+    border-top: 10px solid  #92ce3a;
+}
+
+#fin > button{
+    background-color: #006293;
+}
+#par > button{
+    background-color: #eab511;
+}
+#inf > button{
+    background-color: #de3137;
+}
+#soc > button{
+    background-color: #92ce3a;
+}
+.gran{
+    height: 200px;
+    background-color: rgb(228, 229, 230);
+    
+}
+.gran > h2{
+    margin: 20px auto;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.gran1{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.bl{
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    outline: 1px solid lightslategrey;
+}
+.bl:hover{
+    transform: scale(1.1);
+}
+.bl > h4{
+    text-transform: uppercase;
+}
+#d1, #d3{
+    color: #006293;
+}
+#d2, #d4{
+    color: #de3137;
+}
+#d2, #d3{
+    transform: skewX(20deg)
+}
+#foot{
+    width: 1200px;
+    margin: 10px auto;
+    height: 160px;
+    background: url(./access/footer.jpg) no-repeat;
+    background-size: contain;
+    
+}
+#foot > p{
+    margin: 0 auto;
+    padding-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+#ok{
+    color: white;
+    background-color: black;
+}
+#ok:hover{
+    transform: scale(1.1);
+} */
